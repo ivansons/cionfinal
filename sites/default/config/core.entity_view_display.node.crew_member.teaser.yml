@@ -1,0 +1,22 @@
+uuid: 4dd35302-820f-432b-8186-cb4721660ae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.crew_member.field_full_name
+    - node.type.crew_member
+  module:
+    - user
+id: node.crew_member.teaser
+targetEntityType: node
+bundle: crew_member
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_full_name: true

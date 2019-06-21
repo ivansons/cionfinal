@@ -1,0 +1,29 @@
+uuid: 0a7126d9-7309-407e-906d-72640b929dc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_published_i
+    - paragraphs.paragraphs_type.hero_image
+    - taxonomy.vocabulary.tags
+id: paragraph.hero_image.field_published_i
+field_name: field_published_i
+entity_type: paragraph
+bundle: hero_image
+label: 'Published Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

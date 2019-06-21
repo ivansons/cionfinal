@@ -1,0 +1,24 @@
+uuid: 39d61b78-211a-4d46-aa5b-0b168a435c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.company_credit.field_company_credit
+    - paragraphs.paragraphs_type.company_credit
+id: paragraph.company_credit.default
+targetEntityType: paragraph
+bundle: company_credit
+mode: default
+content:
+  field_company_credit:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

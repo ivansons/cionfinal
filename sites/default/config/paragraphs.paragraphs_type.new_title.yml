@@ -1,0 +1,9 @@
+uuid: 4777e0c3-ef25-463f-a1c1-076e42b865fc
+langcode: en
+status: true
+dependencies: {  }
+id: new_title
+label: 'New Title'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

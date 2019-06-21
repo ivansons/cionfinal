@@ -1,0 +1,19 @@
+uuid: 04e87908-4745-488e-ace7-3e805a9fa9f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_addres
+    - node.type.crew_member
+id: node.crew_member.field_email_addres
+field_name: field_email_addres
+entity_type: node
+bundle: crew_member
+label: 'Email address'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

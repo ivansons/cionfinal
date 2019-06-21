@@ -1,0 +1,30 @@
+uuid: f9cee276-d9cb-425f-ada4-0c309238dc8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.municipal_landing_page
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__municipal_landing_page_block_5
+theme: cion2
+region: sidebar_second
+weight: -17
+provider: null
+plugin: 'views_block:municipal_landing_page-block_5'
+settings:
+  id: 'views_block:municipal_landing_page-block_5'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /municipal-landing-page
+    negate: false
+    context_mapping: {  }

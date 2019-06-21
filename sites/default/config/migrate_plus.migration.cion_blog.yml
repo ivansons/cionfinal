@@ -1,0 +1,22 @@
+uuid: e0eee31e-5e2f-47b3-9960-c7aa56f6c720
+langcode: en
+status: true
+dependencies: {  }
+id: cion_blog
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: CION
+label: 'Migrate the CION Blog to D8'
+source:
+  plugin: cion_blog
+  key: cion_cms
+process:
+  type:
+    plugin: default_value
+    default_value: article
+  title: title
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -1,0 +1,30 @@
+uuid: 00976a37-cbd7-48da-bf0e-2060d7503e34
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homeslideview
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__homeslideview_block_1
+theme: cion2
+region: header
+weight: -20
+provider: null
+plugin: 'views_block:homeslideview-block_1'
+settings:
+  id: 'views_block:homeslideview-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

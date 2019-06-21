@@ -1,0 +1,103 @@
+uuid: ed5b9004-97b4-426e-84bb-a8d35d79f819
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.crew_member.field_about
+    - field.field.profile.crew_member.field_address
+    - field.field.profile.crew_member.field_email_address
+    - field.field.profile.crew_member.field_full_name
+    - field.field.profile.crew_member.field_im
+    - field.field.profile.crew_member.field_municipality
+    - field.field.profile.crew_member.field_new_project
+    - field.field.profile.crew_member.field_phone_number
+    - field.field.profile.crew_member.field_website
+    - profile.type.crew_member
+  module:
+    - address
+    - entity_reference_revisions
+    - link
+id: profile.crew_member.default
+targetEntityType: profile
+bundle: crew_member
+mode: default
+content:
+  field_about:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_address:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_email_address:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_full_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_im:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_municipality:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_new_project:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_phone_number:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_website:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: 64a7ac3b-433f-44a3-a232-d6b1b027de32
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.profiles
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__profiles_block_1
+theme: cion2
+region: header
+weight: -16
+provider: null
+plugin: 'views_block:profiles-block_1'
+settings:
+  id: 'views_block:profiles-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /profile/2
+    negate: false
+    context_mapping: {  }

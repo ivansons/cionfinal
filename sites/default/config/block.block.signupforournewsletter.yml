@@ -1,0 +1,25 @@
+uuid: b757dc33-fa35-4676-a9d8-c326022076ef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fa96df99-4a3b-4c5e-9dde-70e6253ef961'
+  module:
+    - block_content
+  theme:
+    - cion2
+id: signupforournewsletter
+theme: cion2
+region: footer_middle
+weight: -3
+provider: null
+plugin: 'block_content:fa96df99-4a3b-4c5e-9dde-70e6253ef961'
+settings:
+  id: 'block_content:fa96df99-4a3b-4c5e-9dde-70e6253ef961'
+  label: '  Sign up for our newsletter'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

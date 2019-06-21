@@ -1,0 +1,29 @@
+uuid: 8b34cb52-cb29-4a8e-a578-7780eb867a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plot
+    - node.type.new_film
+    - taxonomy.vocabulary.tags
+id: node.new_film.field_plot
+field_name: field_plot
+entity_type: node
+bundle: new_film
+label: 'Plot Keywords'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

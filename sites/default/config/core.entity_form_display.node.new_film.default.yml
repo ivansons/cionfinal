@@ -1,0 +1,274 @@
+uuid: a81cbfb1-413b-4c43-af9e-a7634426d8dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.new_film.field_as
+    - field.field.node.new_film.field_cast
+    - field.field.node.new_film.field_com
+    - field.field.node.new_film.field_contact_number
+    - field.field.node.new_film.field_country
+    - field.field.node.new_film.field_cover_image
+    - field.field.node.new_film.field_email_addres
+    - field.field.node.new_film.field_end_date
+    - field.field.node.new_film.field_flim_type
+    - field.field.node.new_film.field_gallery_image
+    - field.field.node.new_film.field_genre
+    - field.field.node.new_film.field_language
+    - field.field.node.new_film.field_length_minutes
+    - field.field.node.new_film.field_location_term
+    - field.field.node.new_film.field_mpaa
+    - field.field.node.new_film.field_plot
+    - field.field.node.new_film.field_production_crew_member
+    - field.field.node.new_film.field_production_status
+    - field.field.node.new_film.field_start_date
+    - field.field.node.new_film.field_storyline
+    - field.field.node.new_film.field_video
+    - image.style.thumbnail
+    - node.type.new_film
+  module:
+    - address
+    - datetime
+    - image
+    - paragraphs
+    - path
+    - text
+    - video
+id: node.new_film.default
+targetEntityType: node
+bundle: new_film
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_as:
+    weight: 138
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cast:
+    type: entity_reference_paragraphs
+    weight: 141
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_com:
+    type: entity_reference_paragraphs
+    weight: 143
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_contact_number:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_country:
+    weight: 136
+    settings: {  }
+    third_party_settings: {  }
+    type: address_country_default
+    region: content
+  field_cover_image:
+    weight: 130
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_email_addres:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_end_date:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_flim_type:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_gallery_image:
+    weight: 131
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_genre:
+    weight: 134
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_language:
+    weight: 139
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_length_minutes:
+    weight: 142
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_location_term:
+    weight: 129
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mpaa:
+    weight: 133
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_plot:
+    weight: 137
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_production_crew_member:
+    type: entity_reference_paragraphs
+    weight: 140
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_production_status:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_start_date:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_storyline:
+    weight: 127
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_video:
+    weight: 132
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      allowed_providers:
+        youtube: youtube
+      uri_scheme: public
+    third_party_settings: {  }
+    type: video_embed
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 8cd1e591-ae27-4693-836e-e929e7fc5a92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_email_address
+    - profile.type.crew_member
+id: profile.crew_member.field_email_address
+field_name: field_email_address
+entity_type: profile
+bundle: crew_member
+label: 'Email Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

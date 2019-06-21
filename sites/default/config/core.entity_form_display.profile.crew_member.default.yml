@@ -1,0 +1,100 @@
+uuid: 60ab78e5-d3b5-4112-9661-7b9c0419c617
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.crew_member.field_about
+    - field.field.profile.crew_member.field_address
+    - field.field.profile.crew_member.field_email_address
+    - field.field.profile.crew_member.field_full_name
+    - field.field.profile.crew_member.field_im
+    - field.field.profile.crew_member.field_municipality
+    - field.field.profile.crew_member.field_new_project
+    - field.field.profile.crew_member.field_phone_number
+    - field.field.profile.crew_member.field_website
+    - profile.type.crew_member
+  module:
+    - address
+    - link
+    - paragraphs
+id: profile.crew_member.default
+targetEntityType: profile
+bundle: crew_member
+mode: default
+content:
+  field_about:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_address:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_email_address:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_full_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_im:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_municipality:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_new_project:
+    type: entity_reference_paragraphs
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_phone_number:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_website:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden: {  }

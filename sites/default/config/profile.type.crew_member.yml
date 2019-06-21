@@ -1,0 +1,14 @@
+uuid: ba827198-8376-49a8-802f-94fa47864357
+langcode: en
+status: true
+dependencies: {  }
+id: crew_member
+label: 'Crew Member'
+registration: false
+multiple: false
+roles:
+  authenticated: '0'
+  administrator: '0'
+weight: 0
+use_revisions: true
+description: ''

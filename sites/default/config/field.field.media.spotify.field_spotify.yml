@@ -1,0 +1,23 @@
+uuid: 815b987a-0213-439c-b3c9-02a8e590fa09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_spotify
+    - media_entity.bundle.spotify
+  module:
+    - link
+id: media.spotify.field_spotify
+field_name: field_spotify
+entity_type: media
+bundle: spotify
+label: 'Spotify URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

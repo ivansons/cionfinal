@@ -1,0 +1,19 @@
+uuid: 2e5efda5-3232-444c-83c3-1585f29e9521
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_imdb_link
+field_name: field_imdb_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

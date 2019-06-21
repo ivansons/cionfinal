@@ -1,0 +1,31 @@
+uuid: 1a1a4781-65a4-446a-9b65-c192fcc3d5d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:851388e1-45da-49e5-b759-529061caadab'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: quicklinks
+theme: cion2
+region: sidebar_second
+weight: -21
+provider: null
+plugin: 'block_content:851388e1-45da-49e5-b759-529061caadab'
+settings:
+  id: 'block_content:851388e1-45da-49e5-b759-529061caadab'
+  label: 'Quick Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /municipal-landing-page
+    negate: false
+    context_mapping: {  }

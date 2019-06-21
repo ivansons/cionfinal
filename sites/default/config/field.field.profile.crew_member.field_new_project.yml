@@ -1,0 +1,67 @@
+uuid: f9d3be34-fb07-4ab9-a894-80eca3f46e25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_new_project
+    - paragraphs.paragraphs_type.new_title
+    - profile.type.crew_member
+  module:
+    - entity_reference_revisions
+id: profile.crew_member.field_new_project
+field_name: field_new_project
+entity_type: profile
+bundle: crew_member
+label: 'New Project'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      new_title: new_title
+    target_bundles_drag_drop:
+      new_title:
+        enabled: true
+        weight: 14
+      blockquote:
+        weight: 15
+        enabled: false
+      company_credit:
+        weight: 16
+        enabled: false
+      content_first:
+        weight: 17
+        enabled: false
+      hero_image:
+        weight: 18
+        enabled: false
+      image_gallery:
+        weight: 19
+        enabled: false
+      page_header:
+        weight: 20
+        enabled: false
+      production_crew_member:
+        weight: 21
+        enabled: false
+      related_content:
+        weight: 22
+        enabled: false
+      slideshow:
+        weight: 23
+        enabled: false
+      spotify_embed_url:
+        weight: 24
+        enabled: false
+      table:
+        weight: 25
+        enabled: false
+      youtube_video:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

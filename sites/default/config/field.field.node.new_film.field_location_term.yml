@@ -1,0 +1,29 @@
+uuid: 0dd8923e-9079-4506-b18e-a20927a3427b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_term
+    - node.type.new_film
+    - taxonomy.vocabulary.location
+id: node.new_film.field_location_term
+field_name: field_location_term
+entity_type: node
+bundle: new_film
+label: Municipality
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

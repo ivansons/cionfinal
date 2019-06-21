@@ -1,0 +1,29 @@
+uuid: 8d48431c-1ace-4d1e-a040-99b192502446
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_municipality
+    - profile.type.crew_member
+    - taxonomy.vocabulary.location
+id: profile.crew_member.field_municipality
+field_name: field_municipality
+entity_type: profile
+bundle: crew_member
+label: Municipality
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

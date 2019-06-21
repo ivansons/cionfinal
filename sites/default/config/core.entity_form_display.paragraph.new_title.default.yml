@@ -1,0 +1,24 @@
+uuid: 2fe82e8b-0dd7-46ab-b913-8f30c3fd6ce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.new_title.field_new_title
+    - paragraphs.paragraphs_type.new_title
+id: paragraph.new_title.default
+targetEntityType: paragraph
+bundle: new_title
+mode: default
+content:
+  field_new_title:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

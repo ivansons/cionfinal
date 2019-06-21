@@ -1,0 +1,30 @@
+uuid: be878f40-8adf-4eaf-860b-b9904a39d545
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - profile
+id: profile.field_gallery_imae
+field_name: field_gallery_imae
+entity_type: profile
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

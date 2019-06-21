@@ -1,0 +1,26 @@
+uuid: 13a1ba94-889c-46f9-a691-0e53acc31e22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.musician
+  module:
+    - video
+id: node.musician.field_video
+field_name: field_video
+entity_type: node
+bundle: musician
+label: 'Profile Video'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

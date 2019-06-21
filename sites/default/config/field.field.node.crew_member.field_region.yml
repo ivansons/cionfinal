@@ -1,0 +1,29 @@
+uuid: d12e707e-8203-480c-977e-77dbf73097ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.crew_member
+    - taxonomy.vocabulary.tags
+id: node.crew_member.field_region
+field_name: field_region
+entity_type: node
+bundle: crew_member
+label: Region
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

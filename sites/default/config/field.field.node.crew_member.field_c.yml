@@ -1,0 +1,19 @@
+uuid: 8f26e79d-d83b-402c-9780-e8b3050e3b83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c
+    - node.type.crew_member
+id: node.crew_member.field_c
+field_name: field_c
+entity_type: node
+bundle: crew_member
+label: 'Contact Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 7b291984-cb6c-4655-a0d7-46148986a28d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.company_credit.field_company_credit
+    - paragraphs.paragraphs_type.company_credit
+id: paragraph.company_credit.default
+targetEntityType: paragraph
+bundle: company_credit
+mode: default
+content:
+  field_company_credit:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 34745879-d71c-4881-8092-942197451e5e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:60797e1d-a60c-479e-91ae-4f6bcc64aac3'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: filminginsudburytitle
+theme: cion2
+region: highlighted
+weight: -20
+provider: null
+plugin: 'block_content:60797e1d-a60c-479e-91ae-4f6bcc64aac3'
+settings:
+  id: 'block_content:60797e1d-a60c-479e-91ae-4f6bcc64aac3'
+  label: 'FILMING IN SUDBURY title     '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/18
+    negate: false
+    context_mapping: {  }

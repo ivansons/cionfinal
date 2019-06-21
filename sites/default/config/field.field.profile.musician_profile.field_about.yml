@@ -1,0 +1,19 @@
+uuid: dab217f0-602d-423d-b7d5-825f188d6857
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_about
+    - profile.type.musician_profile
+id: profile.musician_profile.field_about
+field_name: field_about
+entity_type: profile
+bundle: musician_profile
+label: About
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

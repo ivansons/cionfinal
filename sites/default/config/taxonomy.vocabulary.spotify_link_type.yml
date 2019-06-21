@@ -1,0 +1,8 @@
+uuid: 47a10916-addb-4af3-afca-e273379a831d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Spotify link type'
+vid: spotify_link_type
+description: ''
+weight: 0

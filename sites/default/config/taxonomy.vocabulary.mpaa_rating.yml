@@ -1,0 +1,8 @@
+uuid: 324f15b2-88bf-497b-ab4a-5e0813388a43
+langcode: en
+status: true
+dependencies: {  }
+name: 'MPAA Rating'
+vid: mpaa_rating
+description: ''
+weight: 0

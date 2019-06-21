@@ -1,0 +1,7 @@
+name: 'Cion Crew Database'
+type: module
+description: 'Customizations for Crew Database'
+core: 8.x
+package: 'Cion Custom'
+dependencies:
+  - views

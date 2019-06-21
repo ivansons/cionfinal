@@ -1,0 +1,25 @@
+uuid: b42b7e6e-d796-4c1b-90c6-b4f718639de9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ee1400c5-4ff6-459b-b298-f0ffb67698ff'
+  module:
+    - block_content
+  theme:
+    - cion2
+id: contactus
+theme: cion2
+region: footer_left
+weight: 0
+provider: null
+plugin: 'block_content:ee1400c5-4ff6-459b-b298-f0ffb67698ff'
+settings:
+  id: 'block_content:ee1400c5-4ff6-459b-b298-f0ffb67698ff'
+  label: 'Contact Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

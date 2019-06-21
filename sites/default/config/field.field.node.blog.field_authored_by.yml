@@ -1,0 +1,19 @@
+uuid: d8c7cd61-d5c4-4a6d-9130-66f19414e6f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authored_by
+    - node.type.blog
+id: node.blog.field_authored_by
+field_name: field_authored_by
+entity_type: node
+bundle: blog
+label: 'Authored By'
+description: 'Authored '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

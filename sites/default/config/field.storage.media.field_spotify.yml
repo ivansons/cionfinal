@@ -1,0 +1,19 @@
+uuid: 0bab24e9-1f52-44c4-a8e0-eb9f1b478560
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - media_entity
+id: media.field_spotify
+field_name: field_spotify
+entity_type: media
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

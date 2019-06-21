@@ -1,0 +1,23 @@
+uuid: 15fe2528-c16a-49fe-9f9d-73c4198c54fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imdb_link
+    - node.type.crew_member
+  module:
+    - link
+id: node.crew_member.field_imdb_link
+field_name: field_imdb_link
+entity_type: node
+bundle: crew_member
+label: 'IMDB Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

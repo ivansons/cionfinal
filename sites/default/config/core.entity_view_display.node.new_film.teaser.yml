@@ -1,0 +1,34 @@
+uuid: a5522ea6-4621-4255-9842-b79cb813deaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.new_film.field_contact_number
+    - field.field.node.new_film.field_email_addres
+    - field.field.node.new_film.field_end_date
+    - field.field.node.new_film.field_flim_type
+    - field.field.node.new_film.field_production_status
+    - field.field.node.new_film.field_start_date
+    - field.field.node.new_film.field_storyline
+    - node.type.new_film
+  module:
+    - user
+id: node.new_film.teaser
+targetEntityType: node
+bundle: new_film
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contact_number: true
+  field_email_addres: true
+  field_end_date: true
+  field_flim_type: true
+  field_production_status: true
+  field_start_date: true
+  field_storyline: true

@@ -1,0 +1,8 @@
+uuid: e70689e7-c7ca-4c9a-ad6d-416da492e3b2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Film Type'
+vid: film_type
+description: ''
+weight: 0

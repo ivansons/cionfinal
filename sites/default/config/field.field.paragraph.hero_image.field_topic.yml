@@ -1,0 +1,19 @@
+uuid: c7a75019-0926-4756-b8b7-575e0661a2d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_topic
+    - paragraphs.paragraphs_type.hero_image
+id: paragraph.hero_image.field_topic
+field_name: field_topic
+entity_type: paragraph
+bundle: hero_image
+label: Topic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

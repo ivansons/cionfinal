@@ -1,0 +1,31 @@
+uuid: e8fabffd-565b-4169-98ea-7cdddbab18d7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fe886962-1aa1-4682-8de0-9b5901f4448e'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: relatedareas
+theme: cion2
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:fe886962-1aa1-4682-8de0-9b5901f4448e'
+settings:
+  id: 'block_content:fe886962-1aa1-4682-8de0-9b5901f4448e'
+  label: 'related areas'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/18
+    negate: false
+    context_mapping: {  }

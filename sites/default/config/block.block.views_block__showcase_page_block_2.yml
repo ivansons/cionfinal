@@ -1,0 +1,30 @@
+uuid: 449ce741-44d7-489b-b3b6-3c7027326b0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.showcase_page
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__showcase_page_block_2
+theme: cion2
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:showcase_page-block_2'
+settings:
+  id: 'views_block:showcase_page-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /showcase-page
+    negate: false
+    context_mapping: {  }

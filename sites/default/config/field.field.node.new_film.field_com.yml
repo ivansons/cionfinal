@@ -1,0 +1,64 @@
+uuid: 5bab17b7-1676-4e56-a73d-55081e8b1c7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_com
+    - node.type.new_film
+    - paragraphs.paragraphs_type.company_credit
+  module:
+    - entity_reference_revisions
+id: node.new_film.field_com
+field_name: field_com
+entity_type: node
+bundle: new_film
+label: 'Company Credit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      company_credit: company_credit
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 13
+        enabled: false
+      company_credit:
+        enabled: true
+        weight: 14
+      content_first:
+        weight: 15
+        enabled: false
+      hero_image:
+        weight: 16
+        enabled: false
+      image_gallery:
+        weight: 17
+        enabled: false
+      page_header:
+        weight: 18
+        enabled: false
+      production_crew_member:
+        weight: 19
+        enabled: false
+      related_content:
+        weight: 20
+        enabled: false
+      slideshow:
+        weight: 21
+        enabled: false
+      spotify_embed_url:
+        weight: 22
+        enabled: false
+      table:
+        weight: 23
+        enabled: false
+      youtube_video:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

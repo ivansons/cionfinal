@@ -1,0 +1,19 @@
+uuid: 26de5967-5e78-40dc-ad16-412d8fb46b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about
+    - node.type.musician
+id: node.musician.field_about
+field_name: field_about
+entity_type: node
+bundle: musician
+label: About
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

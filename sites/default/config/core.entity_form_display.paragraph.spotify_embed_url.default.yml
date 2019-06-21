@@ -1,0 +1,63 @@
+uuid: 12ef1ff6-9c26-4a9e-ade6-5929f8b51a09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.spotify_embed_url.field_description
+    - field.field.paragraph.spotify_embed_url.field_embed_u
+    - field.field.paragraph.spotify_embed_url.field_main_image
+    - field.field.paragraph.spotify_embed_url.field_title
+    - field.field.paragraph.spotify_embed_url.field_type_l
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.spotify_embed_url
+  module:
+    - image
+id: paragraph.spotify_embed_url.default
+targetEntityType: paragraph
+bundle: spotify_embed_url
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_embed_u:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_main_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type_l:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

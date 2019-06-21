@@ -1,0 +1,29 @@
+uuid: 489a4197-a2ea-424e-8adb-74cde4891b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_union_guild
+    - node.type.name
+    - taxonomy.vocabulary.union_guild
+id: node.name.field_union_guild
+field_name: field_union_guild
+entity_type: node
+bundle: name
+label: Union/Guild
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      union_guild: union_guild
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

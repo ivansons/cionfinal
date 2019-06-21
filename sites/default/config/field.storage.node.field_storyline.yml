@@ -1,0 +1,19 @@
+uuid: daa49899-c3d6-4a83-bc23-7836f3508ccf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_storyline
+field_name: field_storyline
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

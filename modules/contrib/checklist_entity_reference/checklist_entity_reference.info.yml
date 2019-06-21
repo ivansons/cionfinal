@@ -1,0 +1,10 @@
+name: Checklist entity reference
+type: module
+description: 'Add a checklist for entity references (such as a taxonomy list).'
+package: Field
+# core: 8.x
+# Information added by Drupal.org packaging script on 2019-03-08
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'checklist_entity_reference'
+datestamp: 1552059487

@@ -1,0 +1,21 @@
+uuid: d2c00fca-b3b2-4d6c-86cd-102e6871619c
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - profile
+id: profile.field_embed_u
+field_name: field_embed_u
+entity_type: profile
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

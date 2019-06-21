@@ -1,0 +1,29 @@
+uuid: e5adf0e7-9ed8-4f8f-bab7-6a7a07192203
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_union_guild
+    - node.type.crew_member
+    - taxonomy.vocabulary.union_guild
+id: node.crew_member.field_union_guild
+field_name: field_union_guild
+entity_type: node
+bundle: crew_member
+label: Union/Guild
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      union_guild: union_guild
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

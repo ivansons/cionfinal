@@ -1,0 +1,19 @@
+uuid: 4f3f71cc-55d2-49cb-b739-53b28ceeed29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_genre
+    - profile.type.musician_profile
+id: profile.musician_profile.field_genre
+field_name: field_genre
+entity_type: profile
+bundle: musician_profile
+label: Genre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 70b1486f-9f2f-4ad8-b869-8800a871709e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cion
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: cion_content
+theme: cion
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

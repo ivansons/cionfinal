@@ -1,0 +1,13 @@
+name: Video Embed Spotify
+type: module
+description: 'A video_embed_field integration with Spotify.'
+package: Field types
+# core: 8.x
+dependencies:
+  - video_embed_field:video_embed_field
+
+# Information added by Drupal.org packaging script on 2018-09-20
+version: '8.x-1.2'
+core: '8.x'
+project: 'video_embed_spotify'
+datestamp: 1537454470

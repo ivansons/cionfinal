@@ -1,0 +1,23 @@
+uuid: 4d40630a-5e2e-4af4-b330-b49f7d625738
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_sound_cloud_profile
+    - profile.type.musician_profile
+  module:
+    - link
+id: profile.musician_profile.field_sound_cloud_profile
+field_name: field_sound_cloud_profile
+entity_type: profile
+bundle: musician_profile
+label: 'Sound Cloud Profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

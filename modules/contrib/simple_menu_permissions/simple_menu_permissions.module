@@ -1,0 +1,168 @@
+<?php
+
+/**
+ * @file
+ * Contains simple_menu_permissions.module.
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * Implements hook_menu_access().
+ *
+ * Checks if the current user has the permission to edit or delete a menu.
+ */
+function simple_menu_permissions_menu_access(EntityInterface $entity, $operation, AccountInterface $account) {
+	if ($operation === 'update' && $account->hasPermission('edit ' . $entity->id() . ' menu')) {
+		return AccessResult::allowed();
+	}
+
+	if ($operation === 'delete' && $account->hasPermission('delete ' . $entity->id() . ' menu')) {
+		return AccessResult::allowed();
+	}
+
+	return AccessResult::forbidden();
+}
+
+/**
+ * Implements hook_menu_create_access().
+ *
+ * Checks if the current user has the permission to create a new menu.
+ */
+function simple_menu_permissions_menu_create_access(AccountInterface $account, array $context, $entity_bundle) {
+	if ($account->hasPermission('create new menu')) {
+		return AccessResult::allowed();
+	}
+
+	return AccessResult::forbidden();
+}
+
+/**
+ * Implements hook_menu_link_content_access().
+ *
+ * Checks if the current user has the permission to edit or delete menu link items in the menu.
+ */
+function simple_menu_permissions_menu_link_content_access(EntityInterface $entity, $operation, AccountInterface $account) {
+	if ($operation === 'update' && $account->hasPermission('edit links in ' . $entity->getMenuName() . ' menu')) {
+		return AccessResult::allowed();
+	}
+
+	if ($operation === 'delete' && $account->hasPermission('delete links in ' . $entity->getMenuName() . ' menu')) {
+		return AccessResult::allowed();
+	}
+
+	return AccessResult::forbidden();
+}
+
+/**
+ * Implements hook_menu_link_content_create_access().
+ *
+ * Check access for creating new menus.
+ */
+function simple_menu_permissions_menu_link_content_create_access(AccountInterface $account, array $context, $entity_bundle) {
+	$menu = \Drupal::routeMatch()->getParameters()->get('menu');
+
+	if ($menu) {
+		if ($account->hasPermission('add new links to ' . $menu->id() . ' menu')) {
+			return AccessResult::allowed();
+		}
+	}
+
+	return AccessResult::forbidden();
+}
+
+/**
+ * Implements hook_form_menu_edit_form_alter().
+ *
+ * Removes the edit/delete operation buttons on the menu edit form
+ */
+function simple_menu_permissions_form_menu_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+	if (isset($form['links']['links'])) {
+		$account = \Drupal::currentUser()->getAccount();
+		$menu = $form_state->getFormObject()->getEntity();
+		$menu_link_ids = Element::children($form['links']['links']);
+
+		foreach ($menu_link_ids as $menu_link_id) {
+			$menu_item_row = $form['links']['links'][$menu_link_id];
+
+			if (isset($menu_item_row['operations']['#links']['edit'])) {
+				if (!$account->hasPermission('edit links in ' . $menu->id() . ' menu')) {
+					unset($form['links']['links'][$menu_link_id]['operations']['#links']['edit']);
+				}
+			}
+
+			if (isset($menu_item_row['operations']['#links']['delete'])) {
+				if (!$account->hasPermission('delete links in ' . $menu->id() . ' menu')) {
+					unset($form['links']['links'][$menu_link_id]['operations']['#links']['delete']);
+				}
+			}
+		}
+	}
+}
+
+/**
+ * Implements hook_form_menu_link_content_menu_link_content_form_alter().
+ *
+ * Removes the restricted options at the menu link content add/edit form where the parent can be selected.
+ */
+function simple_menu_permissions_form_menu_link_content_menu_link_content_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+	if (isset($form['menu_parent']['#options']) && !empty($form['menu_parent']['#options'])) {
+		$account = \Drupal::currentUser()->getAccount();
+
+		foreach ($form['menu_parent']['#options'] as $parent => $menu_link_title) {
+			$parent_parts = explode(':', $parent);
+			$parent_menu_name = $parent_parts[0];
+
+			if (!$account->hasPermission('add new links to ' . $parent_menu_name . ' menu')) {
+				unset($form['menu_parent']['#options'][$parent]);
+			}
+		}
+	}
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Removes restricted menus from the node form.
+ */
+function simple_menu_permissions_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+	if (in_array($form_id, ['node_page_form', 'node_page_edit_form'])) {
+		if (isset($form['menu']['link']['menu_parent']['#options'])) {
+			$account = \Drupal::currentUser()->getAccount();
+
+			foreach ($form['menu']['link']['menu_parent']['#options'] as $parent => $menu_link_title) {
+				$parent_parts = explode(':', $parent);
+				$parent_menu_name = $parent_parts[0];
+
+				if (!$account->hasPermission('add new links to ' . $parent_menu_name . ' menu')) {
+					unset($form['menu']['link']['menu_parent']['#options'][$parent]);
+				}
+			}
+		}
+	}
+}
+
+/**
+ * Implements hook_preprocess_table().
+ *
+ * Checks if the current user has the permission to view a menu in the menu list.
+ */
+function simple_menu_permissions_preprocess_table(&$variables) {
+	$route_name = \Drupal::routeMatch()->getRouteName();
+
+	if ($route_name && $route_name === 'entity.menu.collection') {
+		$account = \Drupal::currentUser()->getAccount();
+
+		foreach ($variables['rows'] as $menu_id => $row_data) {
+			if (!$account->hasPermission('view ' . $menu_id . ' menu in menu list')) {
+				unset($variables['rows'][$menu_id]);
+			}
+		}
+
+		$variables['empty'] = t('There are no @label yet, or you do not have the permission to view a menu.', ['@label' => t('menus')]);
+	}
+}

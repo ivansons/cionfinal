@@ -1,0 +1,29 @@
+uuid: 53ebe2d2-dcdc-40b5-9a15-09f01fa6e101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mpaa
+    - node.type.new_film
+    - taxonomy.vocabulary.mpaa_rating
+id: node.new_film.field_mpaa
+field_name: field_mpaa
+entity_type: node
+bundle: new_film
+label: 'MPAA Rating'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mpaa_rating: mpaa_rating
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

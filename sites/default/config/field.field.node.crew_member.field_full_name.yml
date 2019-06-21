@@ -1,0 +1,21 @@
+uuid: 0b8f6cb8-7500-4679-b08d-ec7a493ab9f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_name
+    - node.type.crew_member
+id: node.crew_member.field_full_name
+field_name: field_full_name
+entity_type: node
+bundle: crew_member
+label: 'Full Name'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'John H Doe'
+default_value_callback: ''
+settings: {  }
+field_type: string

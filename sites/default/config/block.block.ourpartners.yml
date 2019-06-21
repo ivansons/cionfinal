@@ -1,0 +1,25 @@
+uuid: fd8a5d88-4c0b-4c82-915e-d8b71062d305
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:960d31ea-2e79-4690-ae68-5f27b44def72'
+  module:
+    - block_content
+  theme:
+    - cion2
+id: ourpartners
+theme: cion2
+region: footer_right
+weight: 0
+provider: null
+plugin: 'block_content:960d31ea-2e79-4690-ae68-5f27b44def72'
+settings:
+  id: 'block_content:960d31ea-2e79-4690-ae68-5f27b44def72'
+  label: ' Our Partners'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

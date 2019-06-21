@@ -1,0 +1,145 @@
+uuid: 5099b646-447f-4b40-9f8e-89adb783a30c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.crew_member.field_about
+    - field.field.node.crew_member.field_c
+    - field.field.node.crew_member.field_department
+    - field.field.node.crew_member.field_email_addres
+    - field.field.node.crew_member.field_full_name
+    - field.field.node.crew_member.field_imdb_link
+    - field.field.node.crew_member.field_location
+    - field.field.node.crew_member.field_production_name
+    - field.field.node.crew_member.field_region
+    - field.field.node.crew_member.field_resume
+    - field.field.node.crew_member.field_status
+    - field.field.node.crew_member.field_union_guild
+    - field.field.node.crew_member.field_website
+    - node.type.crew_member
+  module:
+    - file
+    - link
+    - user
+id: node.crew_member.default
+targetEntityType: node
+bundle: crew_member
+mode: default
+content:
+  field_about:
+    weight: 114
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_c:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_department:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_email_addres:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_full_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_imdb_link:
+    weight: 111
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_location:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_production_name:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_region:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_resume:
+    weight: 113
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_status:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_union_guild:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_website:
+    weight: 112
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

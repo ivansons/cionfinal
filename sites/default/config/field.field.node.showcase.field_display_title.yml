@@ -1,0 +1,19 @@
+uuid: df6c8240-9253-4417-be82-cd2d563363a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_title
+    - node.type.showcase
+id: node.showcase.field_display_title
+field_name: field_display_title
+entity_type: node
+bundle: showcase
+label: 'Display Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

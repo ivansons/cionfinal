@@ -1,0 +1,28 @@
+uuid: d5b268c4-5f98-4616-ba5a-ecc85256af94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_production_name
+    - node.type.crew_member
+    - node.type.new_film
+id: node.crew_member.field_production_name
+field_name: field_production_name
+entity_type: node
+bundle: crew_member
+label: 'Production Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      new_film: new_film
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

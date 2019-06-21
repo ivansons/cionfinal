@@ -1,0 +1,9 @@
+uuid: 72315844-7e29-447a-a034-669b538e5b0e
+langcode: en
+status: true
+dependencies: {  }
+id: spotify_embed_url
+label: 'Spotify Embed URL'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

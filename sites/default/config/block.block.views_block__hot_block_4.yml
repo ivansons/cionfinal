@@ -1,0 +1,30 @@
+uuid: df883eca-0ef0-439e-988e-8860ec986b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hot
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__hot_block_4
+theme: cion2
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:hot-block_4'
+settings:
+  id: 'views_block:hot-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /hot-list
+    negate: false
+    context_mapping: {  }

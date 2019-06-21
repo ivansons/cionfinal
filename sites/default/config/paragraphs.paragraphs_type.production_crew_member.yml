@@ -1,0 +1,9 @@
+uuid: 08d00cbe-760e-4a59-a132-89723ae228d0
+langcode: en
+status: true
+dependencies: {  }
+id: production_crew_member
+label: 'Production/Crew Member'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

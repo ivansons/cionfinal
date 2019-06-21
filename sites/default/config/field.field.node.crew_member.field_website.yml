@@ -1,0 +1,23 @@
+uuid: bdce2771-df0b-4c4f-bebc-97feb4e17857
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.crew_member
+  module:
+    - link
+id: node.crew_member.field_website
+field_name: field_website
+entity_type: node
+bundle: crew_member
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

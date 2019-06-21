@@ -1,0 +1,44 @@
+uuid: db54eaa9-511b-4e07-afa3-03409825a8f0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer pages'
+  - 'change own username'
+  - 'create crew_member profile'
+  - 'create musician_profile profile'
+  - 'create name content'
+  - 'create new_film content'
+  - 'create resource content'
+  - 'create terms in film_type'
+  - 'create terms in genre'
+  - 'delete own blog content'
+  - 'delete own musician_profile profile'
+  - 'delete own name content'
+  - 'delete own new_film content'
+  - 'delete own resource content'
+  - 'delete own video content'
+  - 'edit own article content'
+  - 'edit own blog content'
+  - 'link to any page'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update own crew_member profile'
+  - 'update own musician_profile profile'
+  - 'use text format basic_html'
+  - 'view any crew_member profile'
+  - 'view any profile'
+  - 'view own crew_member profile'
+  - 'view own musician_profile profile'

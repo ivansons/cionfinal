@@ -1,0 +1,28 @@
+uuid: 0c23284b-b32b-439a-b8a9-b8acc7a9eaff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.musician.field_gallery_image
+    - field.field.node.musician.field_music
+    - field.field.node.musician.field_profile_pic
+    - field.field.node.musician.field_video
+    - node.type.musician
+  module:
+    - user
+id: node.musician.teaser
+targetEntityType: node
+bundle: musician
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_gallery_image: true
+  field_music: true
+  field_profile_pic: true
+  field_video: true

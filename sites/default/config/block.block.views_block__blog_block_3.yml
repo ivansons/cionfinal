@@ -1,0 +1,32 @@
+uuid: 7e60ef22-73db-418c-a949-95eed5046c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - ctools
+    - views
+  theme:
+    - cion2
+id: views_block__blog_block_3
+theme: cion2
+region: content
+weight: -18
+provider: null
+plugin: 'views_block:blog-block_3'
+settings:
+  id: 'views_block:blog-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

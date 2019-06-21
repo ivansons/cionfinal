@@ -1,0 +1,26 @@
+uuid: 41e7a296-3dd6-4c17-bc9d-cacb710935cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_youtube_video
+    - paragraphs.paragraphs_type.youtube_video
+  module:
+    - video
+id: paragraph.youtube_video.field_youtube_video
+field_name: field_youtube_video
+entity_type: paragraph
+bundle: youtube_video
+label: 'Youtube URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

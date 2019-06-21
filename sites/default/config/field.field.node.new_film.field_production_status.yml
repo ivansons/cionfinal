@@ -1,0 +1,29 @@
+uuid: 20b0f802-4165-4d6c-8d79-4e02aac1fbe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_production_status
+    - node.type.new_film
+    - taxonomy.vocabulary.production_status
+id: node.new_film.field_production_status
+field_name: field_production_status
+entity_type: node
+bundle: new_film
+label: 'Production Status'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      production_status: production_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

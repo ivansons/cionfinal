@@ -1,0 +1,30 @@
+uuid: b949a05f-7dbc-4e5d-bd2e-658f3f546ba8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user_dashboard
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__user_dashboard_block_1
+theme: cion2
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'views_block:user_dashboard-block_1'
+settings:
+  id: 'views_block:user_dashboard-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/dashboard\r\n/all-content"
+    negate: false
+    context_mapping: {  }

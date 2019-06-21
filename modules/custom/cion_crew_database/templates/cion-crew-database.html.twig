@@ -1,0 +1,207 @@
+<!-- Add you custom twig html here -->
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+<div class="input__group">
+    <div class="input__addon">
+        <svg class="icon icon--sm">
+            <use xlink:href="assets/svg/sprite.svg#icon-search"></use>
+        </svg>
+    </div>
+
+    <input class="input__text--highlight" type="search" placeholder="Search...">
+
+    <small class="input__validation">
+        Showing results for “Crew job opportunities Sudbury”
+    </small>
+</div>
+
+<!-- HEADER -->
+<div class="row row--between align--center">
+    <h4 class="text--light">
+        Refine Search
+    </h4>
+    <button class="btn__highlight btn--small">
+        Clear All
+    </button>
+</div>
+
+<!-- CHECKBOXES -->
+<section class="database-sidebar__section">
+  <div style="display: none;">
+  {{ form.field_production_name_target_id }}
+ </div>
+    <label class="checkbox__container" for="pre-prod">
+        <input type="checkbox" id="pre-prod">
+        <div class="checkbox__box">
+            <svg class="checkbox__check icon--sm">
+                <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+            </svg>
+        </div>
+        Pre-production
+    </label>
+
+    <label class="checkbox__container" for="prod">
+        <input type="checkbox" id="prod">
+        <div class="checkbox__box">
+            <svg class="checkbox__check icon--sm">
+                <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+            </svg>
+        </div>
+        Production
+    </label>
+
+    <label class="checkbox__container" for="post-prod">
+        <input type="checkbox" id="post-prod">
+        <div class="checkbox__box">
+            <svg class="checkbox__check icon--sm">
+                <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+            </svg>
+        </div>
+        Post-production
+    </label>
+
+</section>
+
+<section class="database-sidebar__section">
+
+    <h5>
+        Department
+    </h5>
+   {{ form.field_department_target_id }}
+    <div class="row row--wrap">
+        <div class="chip--tertiary">
+            Set Decoration ×
+        </div>
+        <div class="chip--tertiary">
+            Sound ×
+        </div>
+        <div class="chip--tertiary">
+            Assistant Director ×
+        </div>
+    </div>
+
+</section>
+
+<section class="database-sidebar__section">
+
+    <h5>
+        Region
+    </h5>
+<div style="display: none;"> {{ form.field_region_target_id }} </div>
+<!-- When activated - state-class of `-is-active` should be applied to alter the appearance -->
+    <div class="row row--wrap row--between">
+        <button class="chip--color">
+            North Bay
+        </button>
+        <button class="chip--color -is-active">
+            Parry Sound
+        </button>
+        <button class="chip--color">
+            Subury
+        </button>
+        <button class="chip--color">
+            Sault St. Marie
+        </button>
+        <button class="chip--color">
+            Thunder Bay
+        </button>
+        <button class="chip--color">
+            Timmins
+        </button>
+    </div>
+
+</section>
+
+<section class="database-sidebar__section">
+
+    <h5>
+        Production Name
+    </h5>
+
+  {{ form.field_production_name_target_id }}
+
+</section>
+
+<section class="database-sidebar__section">
+
+    <h5>
+        Union/Guild
+    </h5>
+
+  <div style="display: none;">  {{ form.field_union_guild_target_id }} </div>
+
+  <div id="javascript-crew-union">
+  <label class="checkbox__container" for="IATSE">
+      <input type="checkbox" id="IATSE">
+      <div class="checkbox__box">
+          <svg class="checkbox__check icon--sm">
+              <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+          </svg>
+      </div>
+      IATSE
+  </label>
+
+  <label class="checkbox__container" for="post-prod">
+      <input type="checkbox" id="post-prod">
+      <div class="checkbox__box">
+          <svg class="checkbox__check icon--sm">
+              <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+          </svg>
+      </div>
+      Post-production
+  </label>
+
+  <label class="checkbox__container" for="DGC">
+      <input type="checkbox" id="DGC">
+      <div class="checkbox__box">
+          <svg class="checkbox__check icon--sm">
+              <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+          </svg>
+      </div>
+      DGC
+  </label>
+
+  <label class="checkbox__container" for="CUPE">
+      <input type="checkbox" id="CUPE">
+      <div class="checkbox__box">
+          <svg class="checkbox__check icon--sm">
+              <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+          </svg>
+      </div>
+      CUPE
+  </label>
+
+  </div>
+
+
+
+</section>
+
+<section class="database-sidebar__section">
+
+    <h5>
+        Status
+    </h5>
+
+    <label class="checkbox__container" for="active">
+        <input type="checkbox" id="active">
+        <div class="checkbox__box">
+            <svg class="checkbox__check icon--sm">
+                <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+            </svg>
+        </div>
+        Active in past 12 months
+    </label>
+
+    <label class="checkbox__container" for="ontario">
+        <input type="checkbox" id="ontario">
+        <div class="checkbox__box">
+            <svg class="checkbox__check icon--sm">
+                <use xlink:href="assets/svg/sprite.svg#icon-check"></use>
+            </svg>
+        </div>
+        Northern Ontario Residents only
+    </label>
+
+</section>

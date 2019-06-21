@@ -1,0 +1,28 @@
+uuid: 88733048-ace7-4712-8f26-5abf26185119
+langcode: en
+status: true
+dependencies:
+  config:
+    - blocktabs.blocktabs.news
+  module:
+    - blocktabs
+    - system
+  theme:
+    - cion2
+id: blocktabsnewsevents
+theme: cion2
+region: content
+weight: 0
+provider: null
+plugin: 'blocktabs_block:news'
+settings:
+  id: 'blocktabs_block:news'
+  label: 'Blocktabs:News & Events'
+  provider: blocktabs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /news-events
+    negate: false
+    context_mapping: {  }

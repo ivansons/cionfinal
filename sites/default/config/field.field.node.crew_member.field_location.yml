@@ -1,0 +1,21 @@
+uuid: e04b0079-21fe-45be-8fec-4d4e0ebbd34a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.crew_member
+id: node.crew_member.field_location
+field_name: field_location
+entity_type: node
+bundle: crew_member
+label: Municipality
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Thunder Bay'
+default_value_callback: ''
+settings: {  }
+field_type: string

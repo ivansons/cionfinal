@@ -1,0 +1,14 @@
+uuid: d8ce15f8-2106-4dda-bd82-d4f359c3d235
+langcode: en
+status: true
+dependencies: {  }
+id: musician_profile
+label: 'Musician Profile'
+registration: false
+multiple: false
+roles:
+  authenticated: '0'
+  administrator: '0'
+weight: 0
+use_revisions: true
+description: ''

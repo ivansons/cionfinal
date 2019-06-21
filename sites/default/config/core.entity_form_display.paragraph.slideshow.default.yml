@@ -1,0 +1,54 @@
+uuid: a60ae82e-db90-4f86-bfe0-012a047fbcd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slideshow.field_main_image
+    - field.field.paragraph.slideshow.field_published_i
+    - field.field.paragraph.slideshow.field_title
+    - field.field.paragraph.slideshow.field_topic
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - image
+id: paragraph.slideshow.default
+targetEntityType: paragraph
+bundle: slideshow
+mode: default
+content:
+  field_main_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_published_i:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_topic:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

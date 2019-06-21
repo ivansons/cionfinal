@@ -1,0 +1,19 @@
+uuid: bf3614c9-48fb-4ecb-96f9-b5ebc4fec970
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - profile
+id: profile.field_im
+field_name: field_im
+entity_type: profile
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

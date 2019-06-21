@@ -1,0 +1,29 @@
+uuid: ff8705c3-4c8f-4e65-90a9-9a6895b490ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_table
+    - paragraphs.paragraphs_type.table
+  module:
+    - tablefield
+id: paragraph.table.field_table
+field_name: field_table
+entity_type: paragraph
+bundle: table
+label: Table
+description: 'Attach tabular data to an entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  export: 0
+  restrict_rebuild: 1
+  restrict_import: 1
+  lock_values: 0
+  cell_processing: '0'
+  empty_rules:
+    ignore_table_structure: 0
+    ignore_table_header: 0
+field_type: tablefield

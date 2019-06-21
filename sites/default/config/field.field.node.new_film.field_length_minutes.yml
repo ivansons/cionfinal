@@ -1,0 +1,23 @@
+uuid: 6a550c51-3e39-4b25-a3d6-ebc8561ac464
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_length_minutes
+    - node.type.new_film
+id: node.new_film.field_length_minutes
+field_name: field_length_minutes
+entity_type: node
+bundle: new_film
+label: 'Length (minutes)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

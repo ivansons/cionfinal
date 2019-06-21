@@ -1,0 +1,22 @@
+uuid: 6b453425-25e7-4b2e-b2ea-7213421d063e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cion
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: cion_messages
+theme: cion
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

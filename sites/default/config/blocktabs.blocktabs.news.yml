@@ -1,0 +1,30 @@
+uuid: 3ddfa0bf-f03a-46a9-94c2-7af01490212e
+langcode: en
+status: true
+dependencies: {  }
+name: news
+label: 'News & Events'
+tabs:
+  7092802d-6717-42d5-a174-505ae09fc98a:
+    uuid: 7092802d-6717-42d5-a174-505ae09fc98a
+    id: block_tab
+    title: All
+    weight: 1
+    data:
+      block_id: 'views_block:news_events-block_1'
+  b44554ac-ed56-4bb2-a9ff-6fe91c11a806:
+    uuid: b44554ac-ed56-4bb2-a9ff-6fe91c11a806
+    id: block_tab
+    title: 'Film & Tv'
+    weight: 2
+    data:
+      block_id: 'views_block:news_events-block_2'
+  7dd5a0de-0186-4651-ae44-79049cf68814:
+    uuid: 7dd5a0de-0186-4651-ae44-79049cf68814
+    id: block_tab
+    title: Music
+    weight: 3
+    data:
+      block_id: 'views_block:news_events-block_3'
+event: mouseover
+style: default

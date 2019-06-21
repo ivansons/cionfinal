@@ -1,0 +1,21 @@
+uuid: 37e67bef-be51-4b69-b79f-a2c9f3cb7254
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_storyline
+    - node.type.new_film
+  module:
+    - text
+id: node.new_film.field_storyline
+field_name: field_storyline
+entity_type: node
+bundle: new_film
+label: Storyline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

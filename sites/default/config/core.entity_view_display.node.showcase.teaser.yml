@@ -1,0 +1,22 @@
+uuid: 55a3abeb-85ec-4cc0-8c75-0bc289ff6340
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.showcase.field_location_term
+    - node.type.showcase
+  module:
+    - user
+id: node.showcase.teaser
+targetEntityType: node
+bundle: showcase
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_location_term: true

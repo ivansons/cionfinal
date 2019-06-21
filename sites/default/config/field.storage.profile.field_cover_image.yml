@@ -1,0 +1,30 @@
+uuid: cce77adc-82fe-4e91-97e1-14b02d9f6393
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - profile
+id: profile.field_cover_image
+field_name: field_cover_image
+entity_type: profile
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

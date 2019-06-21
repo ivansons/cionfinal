@@ -1,0 +1,31 @@
+uuid: 17bb15d4-fd4f-4fd7-9f2a-43beac5fc5dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.tell_us_about_yourself
+  module:
+    - system
+    - webform
+  theme:
+    - cion2
+id: webform
+theme: cion2
+region: content
+weight: -7
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Tell us about yourself'
+  provider: webform
+  label_display: visible
+  webform_id: tell_us_about_yourself
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /musicians
+    negate: false
+    context_mapping: {  }

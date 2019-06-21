@@ -1,0 +1,31 @@
+uuid: 337a2318-3102-4a75-9ef6-3d5e18356162
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aa3740ed-7b5b-46f1-b2ad-5b8bb385a9a0'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: municipallandingpage
+theme: cion2
+region: header
+weight: -17
+provider: null
+plugin: 'block_content:aa3740ed-7b5b-46f1-b2ad-5b8bb385a9a0'
+settings:
+  id: 'block_content:aa3740ed-7b5b-46f1-b2ad-5b8bb385a9a0'
+  label: municipal-landing-page
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /municipal-landing-page
+    negate: false
+    context_mapping: {  }

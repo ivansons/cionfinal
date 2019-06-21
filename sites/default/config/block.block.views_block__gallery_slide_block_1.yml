@@ -1,0 +1,30 @@
+uuid: 1119fb60-a460-4be6-9327-96d1d199301c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.gallery_slide
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__gallery_slide_block_1
+theme: cion2
+region: content
+weight: -12
+provider: null
+plugin: 'views_block:gallery_slide-block_1'
+settings:
+  id: 'views_block:gallery_slide-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /showcase-page
+    negate: false
+    context_mapping: {  }

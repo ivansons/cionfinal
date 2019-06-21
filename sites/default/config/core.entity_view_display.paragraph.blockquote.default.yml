@@ -1,0 +1,30 @@
+uuid: eb35b338-3490-4055-976e-f8eb4edd9e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blockquote.field_author
+    - field.field.paragraph.blockquote.field_blockquote_title
+    - paragraphs.paragraphs_type.blockquote
+id: paragraph.blockquote.default
+targetEntityType: paragraph
+bundle: blockquote
+mode: default
+content:
+  field_author:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_blockquote_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

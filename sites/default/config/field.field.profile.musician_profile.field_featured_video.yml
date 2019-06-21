@@ -1,0 +1,28 @@
+uuid: ef179ae3-c311-446b-97f7-5e6ffbbab1a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_featured_video
+    - node.type.video
+    - profile.type.musician_profile
+id: profile.musician_profile.field_featured_video
+field_name: field_featured_video
+entity_type: profile
+bundle: musician_profile
+label: 'Featured Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: f26032ec-9f79-44e9-a785-2d01560b9d19
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c481465a-9605-4f2c-aeed-6634f9022283'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: ontariocreateslibrary
+theme: cion2
+region: content
+weight: -16
+provider: null
+plugin: 'block_content:c481465a-9605-4f2c-aeed-6634f9022283'
+settings:
+  id: 'block_content:c481465a-9605-4f2c-aeed-6634f9022283'
+  label: 'OntarioCreates Library'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /showcase-page
+    negate: false
+    context_mapping: {  }

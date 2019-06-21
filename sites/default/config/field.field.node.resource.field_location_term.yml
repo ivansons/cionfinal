@@ -1,0 +1,29 @@
+uuid: fe29a810-a3d5-44a9-a93b-089fdfba07de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_term
+    - node.type.resource
+    - taxonomy.vocabulary.location
+id: node.resource.field_location_term
+field_name: field_location_term
+entity_type: node
+bundle: resource
+label: 'Municipality '
+description: 'A municipality is usually a single administrative division having corporate status and powers of self-government or jurisdiction as granted by national and regional laws to which it is subordinate.( Wikipedia )'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

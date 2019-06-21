@@ -1,0 +1,19 @@
+uuid: 6463933c-f17e-44fe-b587-adf1b810c58e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about
+    - node.type.crew_member
+id: node.crew_member.field_about
+field_name: field_about
+entity_type: node
+bundle: crew_member
+label: About
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

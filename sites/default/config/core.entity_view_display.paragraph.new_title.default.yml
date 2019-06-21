@@ -1,0 +1,21 @@
+uuid: f0db416e-dcb9-43f9-8bd6-77c40ace9ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.new_title.field_new_title
+    - paragraphs.paragraphs_type.new_title
+id: paragraph.new_title.default
+targetEntityType: paragraph
+bundle: new_title
+mode: default
+content:
+  field_new_title:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

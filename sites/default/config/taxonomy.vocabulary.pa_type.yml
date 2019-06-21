@@ -1,0 +1,8 @@
+uuid: 5cc7d5ce-6c45-4ab9-9232-98a402cb5bc6
+langcode: en
+status: true
+dependencies: {  }
+name: 'PA Type'
+vid: pa_type
+description: ''
+weight: 0

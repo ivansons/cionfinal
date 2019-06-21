@@ -1,0 +1,23 @@
+uuid: 729517d8-b203-4497-bd4d-9c2a9942f64b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_website
+    - profile.type.musician_profile
+  module:
+    - link
+id: profile.musician_profile.field_website
+field_name: field_website
+entity_type: profile
+bundle: musician_profile
+label: Website
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

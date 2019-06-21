@@ -1,0 +1,20 @@
+uuid: 141de768-4a0d-4e18-ade2-d4eb767e2ac6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_mpaa
+field_name: field_mpaa
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

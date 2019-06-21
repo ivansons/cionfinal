@@ -1,0 +1,31 @@
+uuid: c29a5ae0-e63d-4ef9-91d5-bc1ed08eb71a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:01b1d710-b045-487d-8e47-c3b4383c5a36'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: showcaselocation
+theme: cion2
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:01b1d710-b045-487d-8e47-c3b4383c5a36'
+settings:
+  id: 'block_content:01b1d710-b045-487d-8e47-c3b4383c5a36'
+  label: 'ShowCase Location'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /showcase-page
+    negate: false
+    context_mapping: {  }

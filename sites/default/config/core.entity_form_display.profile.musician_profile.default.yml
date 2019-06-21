@@ -1,0 +1,212 @@
+uuid: 7c5a4bdc-cee8-4fa7-8aec-98807b49e735
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.musician_profile.field_about
+    - field.field.profile.musician_profile.field_address
+    - field.field.profile.musician_profile.field_album_cover
+    - field.field.profile.musician_profile.field_bio
+    - field.field.profile.musician_profile.field_cover_image
+    - field.field.profile.musician_profile.field_email_address
+    - field.field.profile.musician_profile.field_embed_u
+    - field.field.profile.musician_profile.field_facebook
+    - field.field.profile.musician_profile.field_featured_video
+    - field.field.profile.musician_profile.field_full_name
+    - field.field.profile.musician_profile.field_gallery_imae
+    - field.field.profile.musician_profile.field_genre
+    - field.field.profile.musician_profile.field_im
+    - field.field.profile.musician_profile.field_instagram
+    - field.field.profile.musician_profile.field_municipality
+    - field.field.profile.musician_profile.field_phone_number
+    - field.field.profile.musician_profile.field_profile_picture
+    - field.field.profile.musician_profile.field_sound_cloud_profile
+    - field.field.profile.musician_profile.field_twitter
+    - field.field.profile.musician_profile.field_website
+    - field.field.profile.musician_profile.field_youtube_videos
+    - image.style.thumbnail
+    - profile.type.musician_profile
+  module:
+    - address
+    - image
+    - link
+    - paragraphs
+id: profile.musician_profile.default
+targetEntityType: profile
+bundle: musician_profile
+mode: default
+content:
+  field_about:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_address:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_album_cover:
+    weight: 20
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_bio:
+    weight: 13
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_cover_image:
+    weight: 18
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_email_address:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_embed_u:
+    type: entity_reference_paragraphs
+    weight: 21
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_facebook:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_featured_video:
+    weight: 19
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_full_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_gallery_imae:
+    weight: 15
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_genre:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_im:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_instagram:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_municipality:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_phone_number:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_picture:
+    weight: 14
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_sound_cloud_profile:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_twitter:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_website:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_youtube_videos:
+    weight: 16
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

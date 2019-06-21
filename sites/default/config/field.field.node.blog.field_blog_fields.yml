@@ -1,0 +1,65 @@
+uuid: 01b80ddf-dd6d-403b-a4d7-85f7669a30c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_fields
+    - node.type.blog
+    - paragraphs.paragraphs_type.blockquote
+    - paragraphs.paragraphs_type.content_first
+    - paragraphs.paragraphs_type.hero_image
+    - paragraphs.paragraphs_type.image_gallery
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.youtube_video
+  module:
+    - entity_reference_revisions
+id: node.blog.field_blog_fields
+field_name: field_blog_fields
+entity_type: node
+bundle: blog
+label: 'Blog Fields'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero_image: hero_image
+      content_first: content_first
+      youtube_video: youtube_video
+      blockquote: blockquote
+      image_gallery: image_gallery
+      table: table
+    target_bundles_drag_drop:
+      hero_image:
+        enabled: true
+        weight: -19
+      content_first:
+        enabled: true
+        weight: -18
+      youtube_video:
+        enabled: true
+        weight: -17
+      blockquote:
+        enabled: true
+        weight: -16
+      content_second:
+        enabled: true
+        weight: -15
+      image_gallery:
+        enabled: true
+        weight: -14
+      table:
+        enabled: true
+        weight: -13
+      slideshow:
+        weight: -12
+        enabled: false
+      page_header:
+        weight: -11
+        enabled: false
+field_type: entity_reference_revisions

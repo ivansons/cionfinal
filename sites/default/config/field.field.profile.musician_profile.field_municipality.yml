@@ -1,0 +1,29 @@
+uuid: 60eb1551-a1c1-4a42-a9a8-e764760c71d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_municipality
+    - profile.type.musician_profile
+    - taxonomy.vocabulary.location
+id: profile.musician_profile.field_municipality
+field_name: field_municipality
+entity_type: profile
+bundle: musician_profile
+label: Municipality
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 93c80a46-1e43-409a-8a42-69133c2f856a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_im
+    - profile.type.musician_profile
+  module:
+    - link
+id: profile.musician_profile.field_im
+field_name: field_im
+entity_type: profile
+bundle: musician_profile
+label: 'IMDB Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

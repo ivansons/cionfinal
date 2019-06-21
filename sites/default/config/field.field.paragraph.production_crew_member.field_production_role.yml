@@ -1,0 +1,29 @@
+uuid: 8338a00d-081d-4dbd-a20e-09dac69358c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_role
+    - paragraphs.paragraphs_type.production_crew_member
+    - taxonomy.vocabulary.production_roles
+id: paragraph.production_crew_member.field_production_role
+field_name: field_production_role
+entity_type: paragraph
+bundle: production_crew_member
+label: 'Production Role'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      production_roles: production_roles
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

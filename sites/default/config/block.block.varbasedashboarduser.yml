@@ -1,0 +1,26 @@
+uuid: ca44d717-a04a-4f17-895d-2117bb4e95c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - varbase_total_control
+  theme:
+    - cion2
+id: varbasedashboarduser
+theme: cion2
+region: sidebar_second
+weight: -14
+provider: null
+plugin: varbase_dashboard_user
+settings:
+  id: varbase_dashboard_user
+  label: 'Varbase Dashboard User'
+  provider: varbase_total_control
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/dashboard\r\n/all-content"
+    negate: false
+    context_mapping: {  }

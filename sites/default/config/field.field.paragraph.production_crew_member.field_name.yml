@@ -1,0 +1,28 @@
+uuid: faba72c8-aaef-4a72-885b-67804f4230aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - node.type.name
+    - paragraphs.paragraphs_type.production_crew_member
+id: paragraph.production_crew_member.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: production_crew_member
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      name: name
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

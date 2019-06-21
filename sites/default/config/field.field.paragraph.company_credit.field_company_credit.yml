@@ -1,0 +1,28 @@
+uuid: 06d0fc5d-9967-409f-a64d-fb4ac2d02753
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_company_credit
+    - node.type.production_facilities_services
+    - paragraphs.paragraphs_type.company_credit
+id: paragraph.company_credit.field_company_credit
+field_name: field_company_credit
+entity_type: paragraph
+bundle: company_credit
+label: 'Company Credit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      production_facilities_services: production_facilities_services
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

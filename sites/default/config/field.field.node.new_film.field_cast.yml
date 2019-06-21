@@ -1,0 +1,61 @@
+uuid: 85607098-0218-427a-bd69-539d7079616b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cast
+    - node.type.new_film
+    - paragraphs.paragraphs_type.production_crew_member
+  module:
+    - entity_reference_revisions
+id: node.new_film.field_cast
+field_name: field_cast
+entity_type: node
+bundle: new_film
+label: Cast
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      production_crew_member: production_crew_member
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 12
+        enabled: false
+      content_first:
+        weight: 13
+        enabled: false
+      hero_image:
+        weight: 14
+        enabled: false
+      image_gallery:
+        weight: 15
+        enabled: false
+      page_header:
+        weight: 16
+        enabled: false
+      production_crew_member:
+        enabled: true
+        weight: 17
+      related_content:
+        weight: 18
+        enabled: false
+      slideshow:
+        weight: 19
+        enabled: false
+      spotify_embed_url:
+        weight: 20
+        enabled: false
+      table:
+        weight: 21
+        enabled: false
+      youtube_video:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

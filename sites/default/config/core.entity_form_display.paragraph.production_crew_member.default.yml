@@ -1,0 +1,34 @@
+uuid: bb1002da-edbe-45e3-a737-34694b7cee00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.production_crew_member.field_name
+    - field.field.paragraph.production_crew_member.field_production_role
+    - paragraphs.paragraphs_type.production_crew_member
+id: paragraph.production_crew_member.default
+targetEntityType: paragraph
+bundle: production_crew_member
+mode: default
+content:
+  field_name:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_production_role:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

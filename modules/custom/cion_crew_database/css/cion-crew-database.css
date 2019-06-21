@@ -1,0 +1,27 @@
+.chosen-container-multi {
+  width: 100%!important;
+}
+#views-exposed-form-crew-database-page-1 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  border: 1px solid rgb(208, 208, 208)!important;
+  padding: 8px;
+  display: inline-block;
+  width: 166.75px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px inset;
+  border-radius: 3px;
+}
+.checkbox-cover {
+  display: inline;
+  width: auto;
+}
+
+#edit-field-region-target-id .checkbox-cover {
+  display: none;
+}
+
+#edit-field-region-target-id--wrapper label {
+  display: none;
+}

@@ -1,0 +1,31 @@
+uuid: 9c99dc99-0233-48b0-b7b1-27257a40ad63
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f4b46637-3f5b-445b-9d6b-276d9edf50f2'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: showcaseoffer
+theme: cion2
+region: content
+weight: -19
+provider: null
+plugin: 'block_content:f4b46637-3f5b-445b-9d6b-276d9edf50f2'
+settings:
+  id: 'block_content:f4b46637-3f5b-445b-9d6b-276d9edf50f2'
+  label: 'ShowCase Offer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /showcase-page
+    negate: false
+    context_mapping: {  }

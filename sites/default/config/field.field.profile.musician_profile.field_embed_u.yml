@@ -1,0 +1,58 @@
+uuid: 95d35dae-263f-4666-a826-e6e4c4ee1a22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_embed_u
+    - paragraphs.paragraphs_type.spotify_embed_url
+    - profile.type.musician_profile
+  module:
+    - entity_reference_revisions
+id: profile.musician_profile.field_embed_u
+field_name: field_embed_u
+entity_type: profile
+bundle: musician_profile
+label: 'Spotify Embed URL'
+description: 'Right-click any song, album, artist, playlist, podcast or episode in the Spotify player and select “Share”. Click on ''Copy Link'''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      spotify_embed_url: spotify_embed_url
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 11
+        enabled: false
+      content_first:
+        weight: 12
+        enabled: false
+      content_second:
+        weight: 13
+        enabled: false
+      hero_image:
+        weight: 14
+        enabled: false
+      image_gallery:
+        weight: 15
+        enabled: false
+      page_header:
+        weight: 16
+        enabled: false
+      slideshow:
+        weight: 17
+        enabled: false
+      spotify_embed_url:
+        enabled: true
+        weight: 18
+      table:
+        weight: 19
+        enabled: false
+      youtube_video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

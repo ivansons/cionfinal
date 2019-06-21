@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains cion_crew_database.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cion_crew_database_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cion_crew_database module.
+    case 'help.page.cion_crew_database':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Customizations for Crew Database') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cion_crew_database_theme() {
+  return [
+    'cion_crew_database' => [
+      'render element' => 'form',
+    ],
+  ];
+}
+
+function cion_crew_database_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $view_ids = ['crew_database'];
+  $view = $form_state->getStorage('view');
+  if ($form_id == 'views_exposed_form' && in_array($view['view']->id(), $view_ids)) {
+    // Do some shlanga.
+    $form['#attached']['library'][] = 'cion_crew_database/cion-crew';
+    //form['field_production_name_target_id']['#attributes'] = array('class' => array('input__text'));
+    //$form['field_department_target_id']['#attributes'] = array('class' => array('input__text'));
+  }
+}

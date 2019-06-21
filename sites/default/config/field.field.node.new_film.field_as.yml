@@ -1,0 +1,19 @@
+uuid: e1920d22-8167-404a-8353-d98033671a5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_as
+    - node.type.new_film
+id: node.new_film.field_as
+field_name: field_as
+entity_type: node
+bundle: new_film
+label: 'Also Known As'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

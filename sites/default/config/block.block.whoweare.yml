@@ -1,0 +1,31 @@
+uuid: 5e2a08bf-110a-4893-a54b-db750ffd93e5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c5a4c41-9185-4847-93d5-6b7d1c2822da'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: whoweare
+theme: cion2
+region: content
+weight: -14
+provider: null
+plugin: 'block_content:4c5a4c41-9185-4847-93d5-6b7d1c2822da'
+settings:
+  id: 'block_content:4c5a4c41-9185-4847-93d5-6b7d1c2822da'
+  label: 'Who we are '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

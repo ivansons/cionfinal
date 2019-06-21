@@ -1,0 +1,29 @@
+uuid: eaf5d908-84f7-469b-951d-3ccbfbbdc1a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type_l
+    - paragraphs.paragraphs_type.spotify_embed_url
+    - taxonomy.vocabulary.spotify_link_type
+id: paragraph.spotify_embed_url.field_type_l
+field_name: field_type_l
+entity_type: paragraph
+bundle: spotify_embed_url
+label: 'Link Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      spotify_link_type: spotify_link_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

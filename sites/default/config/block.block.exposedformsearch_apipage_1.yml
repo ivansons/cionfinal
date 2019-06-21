@@ -1,0 +1,29 @@
+uuid: b3585f43-4913-467a-8b41-e50521429459
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_api
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: exposedformsearch_apipage_1
+theme: cion2
+region: header
+weight: -15
+provider: null
+plugin: 'views_exposed_filter_block:search_api-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_api-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'News & Events'
+visibility:
+  request_path:
+    id: request_path
+    pages: /news-events
+    negate: false
+    context_mapping: {  }

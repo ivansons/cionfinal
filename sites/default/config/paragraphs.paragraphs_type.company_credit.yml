@@ -1,0 +1,9 @@
+uuid: 9b220fc7-e6a7-4478-9629-f1555cf5d692
+langcode: en
+status: true
+dependencies: {  }
+id: company_credit
+label: 'Company Credit'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

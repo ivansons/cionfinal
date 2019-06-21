@@ -1,0 +1,23 @@
+uuid: 26493162-b537-42f6-a232-39d96727cc89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_instagram
+    - profile.type.musician_profile
+  module:
+    - link
+id: profile.musician_profile.field_instagram
+field_name: field_instagram
+entity_type: profile
+bundle: musician_profile
+label: Instagram
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

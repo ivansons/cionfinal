@@ -1,0 +1,19 @@
+uuid: 0597291a-7b86-4867-aff7-46ddb4496679
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_addres
+    - node.type.user
+id: node.user.field_email_addres
+field_name: field_email_addres
+entity_type: node
+bundle: user
+label: 'Email address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

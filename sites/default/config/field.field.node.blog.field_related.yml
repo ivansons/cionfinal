@@ -1,0 +1,27 @@
+uuid: fee492ff-3eb2-4650-b41c-fee45e5eec12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related
+    - node.type.blog
+id: node.blog.field_related
+field_name: field_related
+entity_type: node
+bundle: blog
+label: Related
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog: blog
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

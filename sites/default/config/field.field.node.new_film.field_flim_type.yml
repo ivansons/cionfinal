@@ -1,0 +1,29 @@
+uuid: e48bb8d7-00b7-4c83-a88a-ccd3813bc5a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flim_type
+    - node.type.new_film
+    - taxonomy.vocabulary.film_type
+id: node.new_film.field_flim_type
+field_name: field_flim_type
+entity_type: node
+bundle: new_film
+label: 'Film Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      film_type: film_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

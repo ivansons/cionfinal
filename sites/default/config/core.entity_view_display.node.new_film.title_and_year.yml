@@ -1,0 +1,67 @@
+uuid: b63972ba-0a10-462c-af18-4febbffb2da9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.title_and_year
+    - field.field.node.new_film.field_as
+    - field.field.node.new_film.field_cast
+    - field.field.node.new_film.field_com
+    - field.field.node.new_film.field_contact_number
+    - field.field.node.new_film.field_country
+    - field.field.node.new_film.field_cover_image
+    - field.field.node.new_film.field_email_addres
+    - field.field.node.new_film.field_end_date
+    - field.field.node.new_film.field_flim_type
+    - field.field.node.new_film.field_gallery_image
+    - field.field.node.new_film.field_genre
+    - field.field.node.new_film.field_language
+    - field.field.node.new_film.field_length_minutes
+    - field.field.node.new_film.field_location_term
+    - field.field.node.new_film.field_mpaa
+    - field.field.node.new_film.field_plot
+    - field.field.node.new_film.field_production_crew_member
+    - field.field.node.new_film.field_production_status
+    - field.field.node.new_film.field_start_date
+    - field.field.node.new_film.field_storyline
+    - field.field.node.new_film.field_video
+    - node.type.new_film
+  module:
+    - datetime
+    - user
+id: node.new_film.title_and_year
+targetEntityType: node
+bundle: new_film
+mode: title_and_year
+content:
+  field_end_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'Y'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+hidden:
+  field_as: true
+  field_cast: true
+  field_com: true
+  field_contact_number: true
+  field_country: true
+  field_cover_image: true
+  field_email_addres: true
+  field_flim_type: true
+  field_gallery_image: true
+  field_genre: true
+  field_language: true
+  field_length_minutes: true
+  field_location_term: true
+  field_mpaa: true
+  field_plot: true
+  field_production_crew_member: true
+  field_production_status: true
+  field_start_date: true
+  field_storyline: true
+  field_video: true
+  links: true

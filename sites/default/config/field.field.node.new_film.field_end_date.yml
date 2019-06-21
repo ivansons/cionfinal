@@ -1,0 +1,21 @@
+uuid: 30cb0cd1-8ea5-4ec6-8868-b195c1fbcb88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.new_film
+  module:
+    - datetime
+id: node.new_film.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: new_film
+label: 'End Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,25 @@
+uuid: 53edb046-fa5d-4cab-a9b8-2378520bbab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_image
+  module:
+    - views
+  theme:
+    - cion2
+id: views_block__hero_image_block_1
+theme: cion2
+region: header
+weight: -14
+provider: null
+plugin: 'views_block:hero_image-block_1'
+settings:
+  id: 'views_block:hero_image-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

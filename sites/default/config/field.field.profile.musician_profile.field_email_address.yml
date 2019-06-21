@@ -1,0 +1,19 @@
+uuid: 05909118-1638-48a9-be00-1ff1b258cb3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_email_address
+    - profile.type.musician_profile
+id: profile.musician_profile.field_email_address
+field_name: field_email_address
+entity_type: profile
+bundle: musician_profile
+label: 'Email Address'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,19 @@
+uuid: 6a74edbd-b624-4ad8-957e-bb8800596b38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_addres
+    - node.type.new_film
+id: node.new_film.field_email_addres
+field_name: field_email_addres
+entity_type: node
+bundle: new_film
+label: 'Email address'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

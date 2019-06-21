@@ -1,0 +1,8 @@
+uuid: 03a179a2-d316-4b37-b901-218bec42270e
+langcode: en
+status: true
+dependencies: {  }
+name: Union/Guild
+vid: union_guild
+description: ''
+weight: 0

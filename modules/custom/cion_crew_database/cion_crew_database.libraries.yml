@@ -1,0 +1,5 @@
+cion-crew:
+  version: 1.x
+  css:
+    theme:
+      css/cion-crew-database.css: {}

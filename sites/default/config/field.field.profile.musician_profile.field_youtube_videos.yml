@@ -1,0 +1,28 @@
+uuid: b4fcbfaa-fe1b-449b-89fc-45f43c423a1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_youtube_videos
+    - node.type.video
+    - profile.type.musician_profile
+id: profile.musician_profile.field_youtube_videos
+field_name: field_youtube_videos
+entity_type: profile
+bundle: musician_profile
+label: 'Youtube Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

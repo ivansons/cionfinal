@@ -1,0 +1,21 @@
+uuid: 03fbd9ba-b0b9-4aa5-97b8-c67cdb7366d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - profile
+id: profile.field_new_project
+field_name: field_new_project
+entity_type: profile
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

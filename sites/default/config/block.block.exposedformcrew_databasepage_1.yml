@@ -1,0 +1,29 @@
+uuid: 739e7a19-f203-444f-a674-280aff4f085b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.crew_database
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: exposedformcrew_databasepage_1
+theme: cion2
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'views_exposed_filter_block:crew_database-page_1'
+settings:
+  id: 'views_exposed_filter_block:crew_database-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /crew-database
+    negate: false
+    context_mapping: {  }

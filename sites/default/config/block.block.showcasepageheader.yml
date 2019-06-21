@@ -1,0 +1,31 @@
+uuid: ebe13cce-276f-4a95-a4e1-1552bd486bda
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2a8ec287-f5f9-4bd5-b6c5-9ec0ee840cc1'
+  module:
+    - block_content
+    - system
+  theme:
+    - cion2
+id: showcasepageheader
+theme: cion2
+region: header
+weight: -18
+provider: null
+plugin: 'block_content:2a8ec287-f5f9-4bd5-b6c5-9ec0ee840cc1'
+settings:
+  id: 'block_content:2a8ec287-f5f9-4bd5-b6c5-9ec0ee840cc1'
+  label: 'ShowCase Page Header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /showcase-page
+    negate: false
+    context_mapping: {  }

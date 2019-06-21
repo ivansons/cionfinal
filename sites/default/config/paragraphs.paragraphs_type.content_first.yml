@@ -1,0 +1,9 @@
+uuid: 67d3a77b-27ba-492e-92f0-393590cc2348
+langcode: en
+status: true
+dependencies: {  }
+id: content_first
+label: 'Body Field'
+icon_uuid: null
+description: 'A text area that includes a title.'
+behavior_plugins: {  }

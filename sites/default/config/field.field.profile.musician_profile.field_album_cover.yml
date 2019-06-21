@@ -1,0 +1,38 @@
+uuid: 6ad7329a-24eb-4a7b-a9db-7cf3d8c73490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_album_cover
+    - profile.type.musician_profile
+  module:
+    - image
+id: profile.musician_profile.field_album_cover
+field_name: field_album_cover
+entity_type: profile
+bundle: musician_profile
+label: 'Album Cover'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

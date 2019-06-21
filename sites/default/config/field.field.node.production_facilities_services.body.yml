@@ -1,0 +1,22 @@
+uuid: 4034aef1-920f-42d0-837b-dee2789df6e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.production_facilities_services
+  module:
+    - text
+id: node.production_facilities_services.body
+field_name: body
+entity_type: node
+bundle: production_facilities_services
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

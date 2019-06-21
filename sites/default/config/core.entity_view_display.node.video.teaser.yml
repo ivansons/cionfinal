@@ -1,0 +1,26 @@
+uuid: 04b253d3-3255-43f9-a266-c7ecebf364dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video.field_location
+    - field.field.node.video.field_video
+    - field.field.node.video.field_year
+    - node.type.video
+  module:
+    - user
+id: node.video.teaser
+targetEntityType: node
+bundle: video
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_location: true
+  field_video: true
+  field_year: true

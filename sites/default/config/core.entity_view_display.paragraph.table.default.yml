@@ -1,0 +1,42 @@
+uuid: 38975c0d-6a28-4952-8409-cf581e7bdfb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.table.field_t
+    - field.field.paragraph.table.field_table
+    - field.field.paragraph.table.field_title
+    - paragraphs.paragraphs_type.table
+  module:
+    - tablefield
+    - text
+id: paragraph.table.default
+targetEntityType: paragraph
+bundle: table
+mode: default
+content:
+  field_t:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_table:
+    weight: 1
+    label: hidden
+    settings:
+      row_header: 1
+      column_header: 0
+    third_party_settings: {  }
+    type: tablefield
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

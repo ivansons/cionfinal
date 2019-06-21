@@ -1,0 +1,30 @@
+uuid: d65eac76-a012-4ece-b35d-aebce3df957d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.your_assistant
+  module:
+    - system
+    - views
+  theme:
+    - cion2
+id: views_block__your_assistant_block_1
+theme: cion2
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:your_assistant-block_1'
+settings:
+  id: 'views_block:your_assistant-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

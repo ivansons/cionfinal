@@ -1,0 +1,20 @@
+uuid: 1c483d8d-6548-4741-a4bb-6f3cd1ddde8a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cion
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: cion_local_actions
+theme: cion
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

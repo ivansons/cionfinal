@@ -1,0 +1,18 @@
+uuid: bad3a1c4-29f4-41f6-a5a1-8263e87f88c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Slideshow
+type: slideshow
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

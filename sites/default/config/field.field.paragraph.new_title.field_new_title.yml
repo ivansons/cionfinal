@@ -1,0 +1,28 @@
+uuid: 0873b345-ed73-4c8f-a238-c7f59df68568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_new_title
+    - node.type.new_film
+    - paragraphs.paragraphs_type.new_title
+id: paragraph.new_title.field_new_title
+field_name: field_new_title
+entity_type: paragraph
+bundle: new_title
+label: 'New Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      new_film: new_film
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
