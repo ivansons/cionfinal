@@ -1,0 +1,4 @@
+name = MagicBlox Custom
+description = "Custom module specific to MagicBlox"
+package = Other
+core = 7.x

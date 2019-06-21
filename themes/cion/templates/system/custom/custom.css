@@ -1,0 +1,15 @@
+body.page-user-signup-creator form fieldset,
+.notcreator fieldset {
+  display:none;
+}
+
+body.page-user-signup-creator form .captcha,
+div.captcha {
+  display:block;
+  margin-top:1.5em;
+}
+
+.g-recaptcha {
+  width: 300px;
+  margin: 0 auto 1em auto;
+}

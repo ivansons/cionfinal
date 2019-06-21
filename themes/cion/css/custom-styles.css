@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Insert Your Custom Styles Below. All styles located in this file will
+   override existing main.css stylesheets.
+   ========================================================================== */ 
+   
+.region-highlighted {
+    position:fixed;
+    bottom:5px;
+    left:5px;
+    width:50%;
+    z-index:1000;
+}
+
+.kint {
+    margin-top:50px;
+}
+
+
